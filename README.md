@@ -1,9 +1,8 @@
 # Rocket-Elevators-Golang-Controller
-This is the template to use for the golang commercial controller. You will find the classes that should be used along with some methods described in the requirements. The necessary files to run some tests are also included. 
 
-### Installation
+# Usage
 
-With golang installed on your computer, all you need to do is initialize the module:
+To use the program, you need to donwload the latest golang version. After that you need to type :
 
 `go mod init Rocket-Elevators-Commercial-Controller`
 
@@ -17,10 +16,19 @@ To launch the tests:
 
 `go test`
 
-With a fully completed project, you should get an output like:
+# Description
 
-![Screenshot from 2021-06-15 15-25-10](https://user-images.githubusercontent.com/28630658/122111573-e6ea7380-cded-11eb-95e3-95e0096a1b3a.png)
+Explain the purpose of your code/what it does.
 
-The test and scenarios files can be left in your final project. The grader will run tests similar to the ones provided.
+Example:
 
-Of course, make sure to edit this Readme file to describe your own project!
+This program controls a Column of elevators.
+
+It sends an elevator when a user presses a button on a floor and it takes
+a user to its desired floor when a button is pressed from the inside the elevator goes to the requested floor.
+
+Elevator selection is based on score assigned from 1 to 5. The first elevator we check will always be the best at the beginnig (like a reference). The bestScore we can get is 1. If elevators have the same score, we do some calculations on the gap between elevators user position.
+
+# Video Link
+
+Here is the link to watch my code explanation video on youtube : https://www.youtube.com/watch?v=h1v8tgQJK5o
